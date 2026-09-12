@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1115">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="SIP Account"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sipAccountSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#1E2129"
+            android:padding="10dp"
+            android:popupBackground="#1E2129" />
+
+        <EditText
+            android:id="@+id/sipLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Account name (e.g. Work, Amarip)"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sipUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SIP username"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sipDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="SIP domain / server (e.g. sip.example.com)"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sipPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="SIP password"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnSaveAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#3A3F4A"
+                android:text="Save account" />
+
+            <Button
+                android:id="@+id/btnDeleteAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3A3F4A"
+                android:text="Delete account" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sipDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Number or SIP URI to call"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSipCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#27C46A"
+            android:text="Call over SIP" />
+
+        <Button
+            android:id="@+id/btnSipHangup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3A3F4A"
+            android:text="Hang up" />
+
+        <TextView
+            android:id="@+id/sipStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Status: idle"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Note: SIP calling depends on your device having Android's built-in SIP stack (android.hardware.sip.voip). Many phones from Samsung, Xiaomi and other OEMs have removed it since Android 12, in which case this screen will fail to register even with correct credentials."
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>
