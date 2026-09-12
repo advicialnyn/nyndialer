@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F1115"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/numberDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:hint="Enter number"
+        android:textColorHint="#555555" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins">
+
+        <Button android:id="@+id/btn1" style="@style/KeyStyle" android:text="1" />
+        <Button android:id="@+id/btn2" style="@style/KeyStyle" android:text="2" />
+        <Button android:id="@+id/btn3" style="@style/KeyStyle" android:text="3" />
+        <Button android:id="@+id/btn4" style="@style/KeyStyle" android:text="4" />
+        <Button android:id="@+id/btn5" style="@style/KeyStyle" android:text="5" />
+        <Button android:id="@+id/btn6" style="@style/KeyStyle" android:text="6" />
+        <Button android:id="@+id/btn7" style="@style/KeyStyle" android:text="7" />
+        <Button android:id="@+id/btn8" style="@style/KeyStyle" android:text="8" />
+        <Button android:id="@+id/btn9" style="@style/KeyStyle" android:text="9" />
+        <Button android:id="@+id/btnStar" style="@style/KeyStyle" android:text="*" />
+        <Button android:id="@+id/btn0" style="@style/KeyStyle" android:text="0" />
+        <Button android:id="@+id/btnHash" style="@style/KeyStyle" android:text="#" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/circle_call"
+            android:text="Call"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@android:color/transparent"
+            android:text="⌫"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOpenSip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:text="SIP / VoIP calling"
+        android:textColor="#27C46A" />
+
+</LinearLayout>
