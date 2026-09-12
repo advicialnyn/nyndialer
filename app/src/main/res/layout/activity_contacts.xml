@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F1115">
+
+    <EditText
+        android:id="@+id/contactSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search contacts"
+        android:textColorHint="#666666"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:background="#0F1115" />
+
+    <ListView
+        android:id="@+id/contactsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#1E2129"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
