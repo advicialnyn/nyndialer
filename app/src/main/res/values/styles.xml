@@ -1,8 +1,0 @@
-<resources>
-    <style name="Theme.NynDialer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">#1B1F27</item>
-        <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">#27C46A</item>
-        <item name="android:windowBackground">#0F1115</item>
-    </style>
-</resources>
