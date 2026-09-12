@@ -238,7 +238,7 @@ public class SipCallActivity extends AppCompatActivity {
                 }
 
                 @Override
-                public void onRegistrationFailed(String localProfileUri, String errorCode, String errorMessage) {
+                public void onRegistrationFailed(String localProfileUri, int errorCode, String errorMessage) {
                     runOnUiThread(() -> statusView.setText("Status: registration failed - " + errorMessage));
                 }
             });
